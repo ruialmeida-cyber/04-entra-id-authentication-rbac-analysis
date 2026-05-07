@@ -1,1 +1,7 @@
-
+Date (UTC),User,UserPrincipalName,UserType,IP,Location,Application,Result,FailureReason,MFAStatus,AuthMethod,Device,OS,Browser,ConditionalAccess,SessionId
+2026-05-07T11:42:23Z,IAM Lab User 01,iam-lab-user-01@ruialmeidadacunhagmail.onmicrosoft.com,Member,79.117.203.18,Alcobendas, Madrid, ES,Azure Portal,Success,,MFA satisfied via token claim,Browser,Chrome 147,Windows 10,Not Applied,004d649a-3d64-7b35-0828-74f30df6f114
+2026-05-07T11:20:43Z,Rui Almeida Da Cunha,rui.almeidadacunha@gmail.com,Member,79.117.203.18,Alcobendas, Madrid, ES,Azure Portal,Success,,Single-factor authentication,Browser,Chrome 147,Windows 10,Not Applied,0041088a-90e0-e8da-a8ae-9c5ca4d3203e
+2026-05-07T11:18:26Z,IAM Lab User 01,iam-lab-user-01@ruialmeidadacunhagmail.onmicrosoft.com,Member,79.117.203.18,Alcobendas, Madrid, ES,Azure Portal,Interrupted,Keep me signed in flow,Session interruption,Browser,Chrome 147,Windows 10,Not Applied,004d649a-3d64-7b35-0828-74f30df6f114
+2026-05-07T11:17:30Z,IAM Lab User 01,iam-lab-user-01@ruialmeidadacunhagmail.onmicrosoft.com,Member,79.117.203.18,Alcobendas, Madrid, ES,Azure Portal,Failure,Invalid username or password,Single-factor authentication,Browser,Chrome 147,Windows 10,Not Applied,
+2026-05-07T10:23:33Z,Rui Almeida Da Cunha,rui.almeidadacunha@gmail.com,Member,40.126.49.152,Alcobendas, Madrid, ES,B2C Authentication,Success,,Token valid,Browser,Chrome 147,Windows 10,Not Applied,
+2026-05-07T09:00:00Z,Rui Almeida Da Cunha,rui.almeidadacunha@gmail.com,Member,40.126.49.152,Alcobendas, Madrid, ES,B2C Authentication,Success,,Token valid,Browser,Chrome 147,Windows 10,Not Applied,
