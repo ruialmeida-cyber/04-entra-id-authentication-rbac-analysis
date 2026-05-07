@@ -1,1 +1,5 @@
-
+Date (UTC),Service,Category,Activity,Result,Actor,ActorUPN,ActorIP,Target,TargetUPN,ChangeType,OldValue
+2026-05-07T11:39:09Z,Core Directory,GroupManagement,Add member to group,Success,User,e725c212-4d94-4ae4-9bf1-62422d7bac76,rui.almeidadacunha_gmail.com#EXT#@ruialmeidadacunhagmail.onmicrosoft.com,iam-lab-user-01,iam-lab-user-01@ruialmeidadacunhagmail.onmicrosoft.com,Group Membership,
+2026-05-07T11:38:28Z,Core Directory,GroupManagement,Remove member from group,Success,User,e725c212-4d94-4ae4-9bf1-62422d7bac76,rui.almeidadacunha_gmail.com#EXT#@ruialmeidadacunhagmail.onmicrosoft.com,iam-lab-user-01,iam-lab-user-01@ruialmeidadacunhagmail.onmicrosoft.com,Group Membership,Present
+2026-05-07T11:37:20Z,Self-service Group Management,GroupManagement,Group_GetDynamicGroupProperties,Success,User,e725c212-4d94-4ae4-9bf1-62422d7bac76,rui.almeidadacunha@gmail.com,Directory Group,NA,Read Operation,
+2026-05-07T10:52:28Z,Self-service Group Management,GroupManagement,GroupsODataV4_Get,Success,User,e725c212-4d94-4ae4-9bf1-62422d7bac76,rui.almeidadacunha@gmail.com,Directory Group,NA,Read Operation,
