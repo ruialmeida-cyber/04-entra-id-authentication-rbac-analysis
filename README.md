@@ -1,99 +1,73 @@
-# Microsoft Entra ID Identity Lifecycle & Authentication Validation (Evidence-Based IAM Lab)
+Entra ID Authentication & RBAC Analysis Lab
 
-## Overview
-This project simulates and analyses an end-to-end identity lifecycle within Microsoft Entra ID, focusing on authentication behaviour, group-based access control (RBAC), and directory-level identity operations.
+📅 March 2026
+✍️ Rui Almeida da Cunha
+📧 rui.almeidadacunha@gmail.com
 
-The objective is to interpret identity behaviour using exported Entra ID Audit Logs and Sign-In Logs, applying structured IAM analysis principles commonly used in cloud security and SOC environments.
+Overview
 
----
+This repository documents an identity and access management analysis focused on Microsoft Entra ID authentication concepts and Role-Based Access Control (RBAC) behaviour.
 
-## Scope
-This lab focuses on:
+The objective is to understand how authentication identity (who you are) transitions into authorization decisions (what you can access), and how this relationship is implemented in enterprise IAM systems.
 
-- Identity provisioning and group membership changes (RBAC)
-- Authentication success, failure, and session behaviour
-- MFA enforcement and token-based authentication patterns
-- Separation of directory-level vs authentication-level telemetry
+This work builds on endpoint authentication analysis and extends it into cloud identity governance concepts used in Microsoft Entra ID.
 
-No SIEM, API ingestion, or live portal monitoring was used. All analysis is based on exported CSV logs.
+Scope of Analysis
 
----
+This lab focuses on two core IAM domains:
 
-## Evidence Structure
+Authentication:
+- Identity verification process
+- Sign-in validation concepts in Entra ID
+- Credential-based identity confirmation
 
-The repository is organised as follows:
+Authorization (RBAC):
+- Role-based access control model
+- Assignment of roles to identities
+- Permission inheritance and access scope definition
 
-```
-Evidence/
-├── Repo4_EntraID_AuditLogs_2026-05-07.csv
-├── Repo4_EntraID_SignInLogs_2026-05-07.csv
-```
+IAM Model Interpretation
 
-- **Audit Logs** → Identity and directory operations (group membership, user management)
-- **Sign-In Logs** → Authentication events (logins, failures, session handling)
+This analysis interprets IAM not as a static configuration system, but as a dynamic relationship between identity verification (authentication) and access decision enforcement (authorization).
 
----
+In this model:
 
-## Key Observations (High-Level)
+- Authentication establishes identity trust
+- RBAC defines permitted actions and resource boundaries
+- Identity governance ensures alignment between access and least privilege principles
 
-### Identity & RBAC Activity
-- Security group membership changes observed (removal and re-addition of a user)
-- Demonstrates dynamic identity state modification within Entra ID
+This mirrors Microsoft Entra ID architecture in enterprise environments.
 
-### Authentication Behaviour
-- Failed authentication due to invalid credentials
-- Session interruption due to “Keep me signed in” flow
-- Successful authentication events across later sessions
+Key Concepts Demonstrated
 
-### MFA & Session Handling
-- MFA satisfied via token-based claims
-- Session persistence observed through token reuse mechanisms
+- Identity vs access separation (authentication vs authorization)
+- Role assignment logic in RBAC systems
+- Least privilege enforcement principles
+- Enterprise IAM control structure interpretation
+- Relationship between identity lifecycle and access control
 
----
+Cloud IAM Mapping (Microsoft Entra ID)
 
-## Security Assessment Summary
-No indicators of compromise were identified.
+The RBAC model demonstrated in this lab maps directly to Microsoft Entra ID role assignment structures:
 
-Observed behaviour aligns with:
-- normal user authentication errors
-- expected session lifecycle handling
-- standard RBAC administrative operations in a test environment
+- Users represent identities
+- Roles represent access policies
+- Assignments define authorization scope
+- Conditional access policies influence access decisions
 
-No evidence of:
-- credential stuffing
-- token abuse
-- anomalous geographic sign-ins
-- malicious identity activity
+This mapping supports understanding of how enterprise IAM systems enforce access governance across cloud environments.
 
----
+Security & IAM Relevance
 
-## IAM Interpretation
-This dataset demonstrates that identity activity in Microsoft Entra ID operates across two distinct layers:
+This analysis demonstrates foundational understanding of how identity authentication translates into controlled access within enterprise systems.
 
-- **Directory layer (Audit Logs)** → identity and access state changes
-- **Authentication layer (Sign-In Logs)** → login validation and session lifecycle
+It supports early-stage IAM roles focused on:
 
-Correct IAM analysis requires separation of these layers.
+- Identity and access analysis
+- RBAC interpretation and support
+- Access governance assistance
+- Entra ID operational understanding
 
----
+Outcome
 
-## Skills Demonstrated
-- Microsoft Entra ID identity lifecycle analysis
-- RBAC and group-based access control interpretation
-- Authentication log analysis (success, failure, interruption)
-- MFA and session behaviour understanding
-- Structured IAM reasoning aligned with SOC workflows
-
----
-
-## Related Evidence Files
-- `/Evidence/Repo4_EntraID_AuditLogs_2026-05-07.csv`
-- `/Evidence/Repo4_EntraID_SignInLogs_2026-05-07.csv`
-
----
-
-## Next Improvements (Planned)
-- Add formal detection hypotheses (SOC-style reasoning)
-- Map events to MITRE ATT&CK techniques
-- Introduce Microsoft Sentinel / KQL queries
-- Expand into full IAM incident case study format
+This lab provides a structured interpretation of Microsoft Entra ID authentication and RBAC principles, establishing foundational understanding of how identity and access control interact in enterprise IAM environments.
